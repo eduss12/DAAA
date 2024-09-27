@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB89A2512CA6C455008F841D /* ContadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89A2502CA6C455008F841D /* ContadorApp.swift */; };
+		FB89A2532CA6C455008F841D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89A2522CA6C455008F841D /* ContentView.swift */; };
+		FB89A2552CA6C456008F841D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB89A2542CA6C456008F841D /* Assets.xcassets */; };
+		FB89A2582CA6C456008F841D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB89A2572CA6C456008F841D /* Preview Assets.xcassets */; };
+		FB89A2622CA6C457008F841D /* ContadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89A2612CA6C457008F841D /* ContadorTests.swift */; };
+		FB89A26C2CA6C457008F841D /* ContadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89A26B2CA6C457008F841D /* ContadorUITests.swift */; };
+		FB89A26E2CA6C457008F841D /* ContadorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB89A26D2CA6C457008F841D /* ContadorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB89A25E2CA6C457008F841D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB89A2452CA6C455008F841D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB89A24C2CA6C455008F841D;
+			remoteInfo = Contador;
+		};
+		FB89A2682CA6C457008F841D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB89A2452CA6C455008F841D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB89A24C2CA6C455008F841D;
+			remoteInfo = Contador;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB89A24D2CA6C455008F841D /* Contador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contador.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB89A2502CA6C455008F841D /* ContadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorApp.swift; sourceTree = "<group>"; };
+		FB89A2522CA6C455008F841D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB89A2542CA6C456008F841D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB89A2572CA6C456008F841D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB89A25D2CA6C457008F841D /* ContadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB89A2612CA6C457008F841D /* ContadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorTests.swift; sourceTree = "<group>"; };
+		FB89A2672CA6C457008F841D /* ContadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB89A26B2CA6C457008F841D /* ContadorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorUITests.swift; sourceTree = "<group>"; };
+		FB89A26D2CA6C457008F841D /* ContadorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB89A24A2CA6C455008F841D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB89A25A2CA6C457008F841D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB89A2642CA6C457008F841D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB89A2442CA6C455008F841D = {
+			isa = PBXGroup;
+			children = (
+				FB89A24F2CA6C455008F841D /* Contador */,
+				FB89A2602CA6C457008F841D /* ContadorTests */,
+				FB89A26A2CA6C457008F841D /* ContadorUITests */,
+				FB89A24E2CA6C455008F841D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB89A24E2CA6C455008F841D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB89A24D2CA6C455008F841D /* Contador.app */,
+				FB89A25D2CA6C457008F841D /* ContadorTests.xctest */,
+				FB89A2672CA6C457008F841D /* ContadorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB89A24F2CA6C455008F841D /* Contador */ = {
+			isa = PBXGroup;
+			children = (
+				FB89A2502CA6C455008F841D /* ContadorApp.swift */,
+				FB89A2522CA6C455008F841D /* ContentView.swift */,
+				FB89A2542CA6C456008F841D /* Assets.xcassets */,
+				FB89A2562CA6C456008F841D /* Preview Content */,
+			);
+			path = Contador;
+			sourceTree = "<group>";
+		};
+		FB89A2562CA6C456008F841D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB89A2572CA6C456008F841D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB89A2602CA6C457008F841D /* ContadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB89A2612CA6C457008F841D /* ContadorTests.swift */,
+			);
+			path = ContadorTests;
+			sourceTree = "<group>";
+		};
+		FB89A26A2CA6C457008F841D /* ContadorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB89A26B2CA6C457008F841D /* ContadorUITests.swift */,
+				FB89A26D2CA6C457008F841D /* ContadorUITestsLaunchTests.swift */,
+			);
+			path = ContadorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB89A24C2CA6C455008F841D /* Contador */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB89A2712CA6C457008F841D /* Build configuration list for PBXNativeTarget "Contador" */;
+			buildPhases = (
+				FB89A2492CA6C455008F841D /* Sources */,
+				FB89A24A2CA6C455008F841D /* Frameworks */,
+				FB89A24B2CA6C455008F841D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Contador;
+			productName = Contador;
+			productReference = FB89A24D2CA6C455008F841D /* Contador.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB89A25C2CA6C457008F841D /* ContadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB89A2742CA6C457008F841D /* Build configuration list for PBXNativeTarget "ContadorTests" */;
+			buildPhases = (
+				FB89A2592CA6C457008F841D /* Sources */,
+				FB89A25A2CA6C457008F841D /* Frameworks */,
+				FB89A25B2CA6C457008F841D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB89A25F2CA6C457008F841D /* PBXTargetDependency */,
+			);
+			name = ContadorTests;
+			productName = ContadorTests;
+			productReference = FB89A25D2CA6C457008F841D /* ContadorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB89A2662CA6C457008F841D /* ContadorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB89A2772CA6C457008F841D /* Build configuration list for PBXNativeTarget "ContadorUITests" */;
+			buildPhases = (
+				FB89A2632CA6C457008F841D /* Sources */,
+				FB89A2642CA6C457008F841D /* Frameworks */,
+				FB89A2652CA6C457008F841D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB89A2692CA6C457008F841D /* PBXTargetDependency */,
+			);
+			name = ContadorUITests;
+			productName = ContadorUITests;
+			productReference = FB89A2672CA6C457008F841D /* ContadorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB89A2452CA6C455008F841D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FB89A24C2CA6C455008F841D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FB89A25C2CA6C457008F841D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FB89A24C2CA6C455008F841D;
+					};
+					FB89A2662CA6C457008F841D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FB89A24C2CA6C455008F841D;
+					};
+				};
+			};
+			buildConfigurationList = FB89A2482CA6C455008F841D /* Build configuration list for PBXProject "Contador" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB89A2442CA6C455008F841D;
+			productRefGroup = FB89A24E2CA6C455008F841D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB89A24C2CA6C455008F841D /* Contador */,
+				FB89A25C2CA6C457008F841D /* ContadorTests */,
+				FB89A2662CA6C457008F841D /* ContadorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB89A24B2CA6C455008F841D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB89A2582CA6C456008F841D /* Preview Assets.xcassets in Resources */,
+				FB89A2552CA6C456008F841D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB89A25B2CA6C457008F841D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB89A2652CA6C457008F841D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB89A2492CA6C455008F841D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB89A2532CA6C455008F841D /* ContentView.swift in Sources */,
+				FB89A2512CA6C455008F841D /* ContadorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB89A2592CA6C457008F841D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB89A2622CA6C457008F841D /* ContadorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB89A2632CA6C457008F841D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB89A26E2CA6C457008F841D /* ContadorUITestsLaunchTests.swift in Sources */,
+				FB89A26C2CA6C457008F841D /* ContadorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB89A25F2CA6C457008F841D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB89A24C2CA6C455008F841D /* Contador */;
+			targetProxy = FB89A25E2CA6C457008F841D /* PBXContainerItemProxy */;
+		};
+		FB89A2692CA6C457008F841D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB89A24C2CA6C455008F841D /* Contador */;
+			targetProxy = FB89A2682CA6C457008F841D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB89A26F2CA6C457008F841D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB89A2702CA6C457008F841D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB89A2722CA6C457008F841D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contador/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Contador.Contador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB89A2732CA6C457008F841D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Contador/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Contador.Contador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB89A2752CA6C457008F841D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Contador.ContadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contador";
+			};
+			name = Debug;
+		};
+		FB89A2762CA6C457008F841D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Contador.ContadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Contador";
+			};
+			name = Release;
+		};
+		FB89A2782CA6C457008F841D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Contador.ContadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contador;
+			};
+			name = Debug;
+		};
+		FB89A2792CA6C457008F841D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Contador.ContadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contador;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB89A2482CA6C455008F841D /* Build configuration list for PBXProject "Contador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB89A26F2CA6C457008F841D /* Debug */,
+				FB89A2702CA6C457008F841D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB89A2712CA6C457008F841D /* Build configuration list for PBXNativeTarget "Contador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB89A2722CA6C457008F841D /* Debug */,
+				FB89A2732CA6C457008F841D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB89A2742CA6C457008F841D /* Build configuration list for PBXNativeTarget "ContadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB89A2752CA6C457008F841D /* Debug */,
+				FB89A2762CA6C457008F841D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB89A2772CA6C457008F841D /* Build configuration list for PBXNativeTarget "ContadorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB89A2782CA6C457008F841D /* Debug */,
+				FB89A2792CA6C457008F841D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB89A2452CA6C455008F841D /* Project object */;
+}
