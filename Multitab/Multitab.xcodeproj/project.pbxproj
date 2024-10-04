@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA190B62CAFEED5006AE22E /* MultitabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190B52CAFEED5006AE22E /* MultitabApp.swift */; };
+		FBA190B82CAFEED5006AE22E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190B72CAFEED5006AE22E /* ContentView.swift */; };
+		FBA190BA2CAFEED6006AE22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA190B92CAFEED6006AE22E /* Assets.xcassets */; };
+		FBA190BE2CAFEED6006AE22E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA190BD2CAFEED6006AE22E /* Preview Assets.xcassets */; };
+		FBA190C82CAFEED7006AE22E /* MultitabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190C72CAFEED7006AE22E /* MultitabTests.swift */; };
+		FBA190D22CAFEED7006AE22E /* MultitabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190D12CAFEED7006AE22E /* MultitabUITests.swift */; };
+		FBA190D42CAFEED7006AE22E /* MultitabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190D32CAFEED7006AE22E /* MultitabUITestsLaunchTests.swift */; };
+		FBA190E22CAFEF96006AE22E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190E12CAFEF96006AE22E /* HomeView.swift */; };
+		FBA190E42CAFEFAC006AE22E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190E32CAFEFAC006AE22E /* AboutView.swift */; };
+		FBA190E62CAFEFC0006AE22E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190E52CAFEFC0006AE22E /* SettingsView.swift */; };
+		FBA190E82CAFF0C1006AE22E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA190E72CAFF0C1006AE22E /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA190C42CAFEED7006AE22E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA190AA2CAFEED5006AE22E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA190B12CAFEED5006AE22E;
+			remoteInfo = Multitab;
+		};
+		FBA190CE2CAFEED7006AE22E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA190AA2CAFEED5006AE22E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA190B12CAFEED5006AE22E;
+			remoteInfo = Multitab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBA190B22CAFEED5006AE22E /* Multitab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multitab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA190B52CAFEED5006AE22E /* MultitabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitabApp.swift; sourceTree = "<group>"; };
+		FBA190B72CAFEED5006AE22E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBA190B92CAFEED6006AE22E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBA190BB2CAFEED6006AE22E /* Multitab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multitab.entitlements; sourceTree = "<group>"; };
+		FBA190BD2CAFEED6006AE22E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBA190C32CAFEED7006AE22E /* MultitabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultitabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA190C72CAFEED7006AE22E /* MultitabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitabTests.swift; sourceTree = "<group>"; };
+		FBA190CD2CAFEED7006AE22E /* MultitabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultitabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA190D12CAFEED7006AE22E /* MultitabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitabUITests.swift; sourceTree = "<group>"; };
+		FBA190D32CAFEED7006AE22E /* MultitabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBA190E12CAFEF96006AE22E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FBA190E32CAFEFAC006AE22E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		FBA190E52CAFEFC0006AE22E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FBA190E72CAFF0C1006AE22E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA190AF2CAFEED5006AE22E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA190C02CAFEED7006AE22E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA190CA2CAFEED7006AE22E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA190A92CAFEED5006AE22E = {
+			isa = PBXGroup;
+			children = (
+				FBA190B42CAFEED5006AE22E /* Multitab */,
+				FBA190C62CAFEED7006AE22E /* MultitabTests */,
+				FBA190D02CAFEED7006AE22E /* MultitabUITests */,
+				FBA190B32CAFEED5006AE22E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA190B32CAFEED5006AE22E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA190B22CAFEED5006AE22E /* Multitab.app */,
+				FBA190C32CAFEED7006AE22E /* MultitabTests.xctest */,
+				FBA190CD2CAFEED7006AE22E /* MultitabUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA190B42CAFEED5006AE22E /* Multitab */ = {
+			isa = PBXGroup;
+			children = (
+				FBA190B52CAFEED5006AE22E /* MultitabApp.swift */,
+				FBA190E02CAFEF71006AE22E /* View */,
+				FBA190B92CAFEED6006AE22E /* Assets.xcassets */,
+				FBA190BB2CAFEED6006AE22E /* Multitab.entitlements */,
+				FBA190BC2CAFEED6006AE22E /* Preview Content */,
+			);
+			path = Multitab;
+			sourceTree = "<group>";
+		};
+		FBA190BC2CAFEED6006AE22E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBA190BD2CAFEED6006AE22E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBA190C62CAFEED7006AE22E /* MultitabTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA190C72CAFEED7006AE22E /* MultitabTests.swift */,
+			);
+			path = MultitabTests;
+			sourceTree = "<group>";
+		};
+		FBA190D02CAFEED7006AE22E /* MultitabUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA190D12CAFEED7006AE22E /* MultitabUITests.swift */,
+				FBA190D32CAFEED7006AE22E /* MultitabUITestsLaunchTests.swift */,
+			);
+			path = MultitabUITests;
+			sourceTree = "<group>";
+		};
+		FBA190E02CAFEF71006AE22E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FBA190B72CAFEED5006AE22E /* ContentView.swift */,
+				FBA190E12CAFEF96006AE22E /* HomeView.swift */,
+				FBA190E32CAFEFAC006AE22E /* AboutView.swift */,
+				FBA190E52CAFEFC0006AE22E /* SettingsView.swift */,
+				FBA190E72CAFF0C1006AE22E /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA190B12CAFEED5006AE22E /* Multitab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA190D72CAFEED7006AE22E /* Build configuration list for PBXNativeTarget "Multitab" */;
+			buildPhases = (
+				FBA190AE2CAFEED5006AE22E /* Sources */,
+				FBA190AF2CAFEED5006AE22E /* Frameworks */,
+				FBA190B02CAFEED5006AE22E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Multitab;
+			productName = Multitab;
+			productReference = FBA190B22CAFEED5006AE22E /* Multitab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA190C22CAFEED7006AE22E /* MultitabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA190DA2CAFEED7006AE22E /* Build configuration list for PBXNativeTarget "MultitabTests" */;
+			buildPhases = (
+				FBA190BF2CAFEED7006AE22E /* Sources */,
+				FBA190C02CAFEED7006AE22E /* Frameworks */,
+				FBA190C12CAFEED7006AE22E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA190C52CAFEED7006AE22E /* PBXTargetDependency */,
+			);
+			name = MultitabTests;
+			productName = MultitabTests;
+			productReference = FBA190C32CAFEED7006AE22E /* MultitabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBA190CC2CAFEED7006AE22E /* MultitabUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA190DD2CAFEED7006AE22E /* Build configuration list for PBXNativeTarget "MultitabUITests" */;
+			buildPhases = (
+				FBA190C92CAFEED7006AE22E /* Sources */,
+				FBA190CA2CAFEED7006AE22E /* Frameworks */,
+				FBA190CB2CAFEED7006AE22E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA190CF2CAFEED7006AE22E /* PBXTargetDependency */,
+			);
+			name = MultitabUITests;
+			productName = MultitabUITests;
+			productReference = FBA190CD2CAFEED7006AE22E /* MultitabUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA190AA2CAFEED5006AE22E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FBA190B12CAFEED5006AE22E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FBA190C22CAFEED7006AE22E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FBA190B12CAFEED5006AE22E;
+					};
+					FBA190CC2CAFEED7006AE22E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = FBA190B12CAFEED5006AE22E;
+					};
+				};
+			};
+			buildConfigurationList = FBA190AD2CAFEED5006AE22E /* Build configuration list for PBXProject "Multitab" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA190A92CAFEED5006AE22E;
+			productRefGroup = FBA190B32CAFEED5006AE22E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA190B12CAFEED5006AE22E /* Multitab */,
+				FBA190C22CAFEED7006AE22E /* MultitabTests */,
+				FBA190CC2CAFEED7006AE22E /* MultitabUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA190B02CAFEED5006AE22E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA190BE2CAFEED6006AE22E /* Preview Assets.xcassets in Resources */,
+				FBA190BA2CAFEED6006AE22E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA190C12CAFEED7006AE22E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA190CB2CAFEED7006AE22E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA190AE2CAFEED5006AE22E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA190E62CAFEFC0006AE22E /* SettingsView.swift in Sources */,
+				FBA190E82CAFF0C1006AE22E /* DetailView.swift in Sources */,
+				FBA190E42CAFEFAC006AE22E /* AboutView.swift in Sources */,
+				FBA190E22CAFEF96006AE22E /* HomeView.swift in Sources */,
+				FBA190B82CAFEED5006AE22E /* ContentView.swift in Sources */,
+				FBA190B62CAFEED5006AE22E /* MultitabApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA190BF2CAFEED7006AE22E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA190C82CAFEED7006AE22E /* MultitabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA190C92CAFEED7006AE22E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA190D42CAFEED7006AE22E /* MultitabUITestsLaunchTests.swift in Sources */,
+				FBA190D22CAFEED7006AE22E /* MultitabUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA190C52CAFEED7006AE22E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA190B12CAFEED5006AE22E /* Multitab */;
+			targetProxy = FBA190C42CAFEED7006AE22E /* PBXContainerItemProxy */;
+		};
+		FBA190CF2CAFEED7006AE22E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA190B12CAFEED5006AE22E /* Multitab */;
+			targetProxy = FBA190CE2CAFEED7006AE22E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBA190D52CAFEED7006AE22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBA190D62CAFEED7006AE22E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FBA190D82CAFEED7006AE22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Multitab/Multitab.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Multitab/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Multitab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBA190D92CAFEED7006AE22E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Multitab/Multitab.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Multitab/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.Multitab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBA190DB2CAFEED7006AE22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.MultitabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multitab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Multitab";
+			};
+			name = Debug;
+		};
+		FBA190DC2CAFEED7006AE22E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.MultitabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multitab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Multitab";
+			};
+			name = Release;
+		};
+		FBA190DE2CAFEED7006AE22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.MultitabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Multitab;
+			};
+			name = Debug;
+		};
+		FBA190DF2CAFEED7006AE22E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eduardo.MultitabUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Multitab;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA190AD2CAFEED5006AE22E /* Build configuration list for PBXProject "Multitab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA190D52CAFEED7006AE22E /* Debug */,
+				FBA190D62CAFEED7006AE22E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA190D72CAFEED7006AE22E /* Build configuration list for PBXNativeTarget "Multitab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA190D82CAFEED7006AE22E /* Debug */,
+				FBA190D92CAFEED7006AE22E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA190DA2CAFEED7006AE22E /* Build configuration list for PBXNativeTarget "MultitabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA190DB2CAFEED7006AE22E /* Debug */,
+				FBA190DC2CAFEED7006AE22E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA190DD2CAFEED7006AE22E /* Build configuration list for PBXNativeTarget "MultitabUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA190DE2CAFEED7006AE22E /* Debug */,
+				FBA190DF2CAFEED7006AE22E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA190AA2CAFEED5006AE22E /* Project object */;
+}
