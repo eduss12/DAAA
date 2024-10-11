@@ -14,7 +14,6 @@
 		FB7BAB952CAFFA7600972421 /* UsalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BAB942CAFFA7600972421 /* UsalUITests.swift */; };
 		FB7BAB972CAFFA7600972421 /* UsalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BAB962CAFFA7600972421 /* UsalUITestsLaunchTests.swift */; };
 		FB7BABA62CAFFAC800972421 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABA32CAFFAC800972421 /* CircleImage.swift */; };
-		FB7BABA72CAFFAC800972421 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABA42CAFFAC800972421 /* ContentView.swift */; };
 		FB7BABA82CAFFAC800972421 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABA52CAFFAC800972421 /* MapView.swift */; };
 		FB7BABAB2CAFFBD200972421 /* facultades.json in Resources */ = {isa = PBXBuildFile; fileRef = FB7BABAA2CAFFBD200972421 /* facultades.json */; };
 		FB7BABAE2CAFFC2B00972421 /* Facultad.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABAD2CAFFC2B00972421 /* Facultad.swift */; };
@@ -22,6 +21,11 @@
 		FB7BABB22CAFFF4400972421 /* FacultadRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABB12CAFFF4400972421 /* FacultadRow.swift */; };
 		FB7BABB42CB000C400972421 /* FacultadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABB32CB000C400972421 /* FacultadList.swift */; };
 		FB7BABB62CB0020100972421 /* FacultadDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BABB52CB0020100972421 /* FacultadDetail.swift */; };
+		FBA917052CB9366E0005EA5D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA917042CB9366E0005EA5D /* FavoriteButton.swift */; };
+		FBA917072CB93F670005EA5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA917062CB93F670005EA5D /* HomeView.swift */; };
+		FBA917092CB93F7F0005EA5D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA917082CB93F7F0005EA5D /* InfoView.swift */; };
+		FBA9170B2CB93F960005EA5D /* FacultadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9170A2CB93F960005EA5D /* FacultadView.swift */; };
+		FBA9170D2CB941DA0005EA5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9170C2CB941DA0005EA5D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,6 @@
 		FB7BAB942CAFFA7600972421 /* UsalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsalUITests.swift; sourceTree = "<group>"; };
 		FB7BAB962CAFFA7600972421 /* UsalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB7BABA32CAFFAC800972421 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
-		FB7BABA42CAFFAC800972421 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB7BABA52CAFFAC800972421 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		FB7BABAA2CAFFBD200972421 /* facultades.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = facultades.json; sourceTree = "<group>"; };
 		FB7BABAD2CAFFC2B00972421 /* Facultad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facultad.swift; sourceTree = "<group>"; };
@@ -60,6 +63,11 @@
 		FB7BABB12CAFFF4400972421 /* FacultadRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultadRow.swift; sourceTree = "<group>"; };
 		FB7BABB32CB000C400972421 /* FacultadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultadList.swift; sourceTree = "<group>"; };
 		FB7BABB52CB0020100972421 /* FacultadDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultadDetail.swift; sourceTree = "<group>"; };
+		FBA917042CB9366E0005EA5D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		FBA917062CB93F670005EA5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FBA917082CB93F7F0005EA5D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		FBA9170A2CB93F960005EA5D /* FacultadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultadView.swift; sourceTree = "<group>"; };
+		FBA9170C2CB941DA0005EA5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,11 +157,15 @@
 			isa = PBXGroup;
 			children = (
 				FB7BABA32CAFFAC800972421 /* CircleImage.swift */,
-				FB7BABA42CAFFAC800972421 /* ContentView.swift */,
 				FB7BABA52CAFFAC800972421 /* MapView.swift */,
 				FB7BABB12CAFFF4400972421 /* FacultadRow.swift */,
 				FB7BABB32CB000C400972421 /* FacultadList.swift */,
 				FB7BABB52CB0020100972421 /* FacultadDetail.swift */,
+				FBA917042CB9366E0005EA5D /* FavoriteButton.swift */,
+				FBA917062CB93F670005EA5D /* HomeView.swift */,
+				FBA917082CB93F7F0005EA5D /* InfoView.swift */,
+				FBA9170A2CB93F960005EA5D /* FacultadView.swift */,
+				FBA9170C2CB941DA0005EA5D /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,13 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA9170B2CB93F960005EA5D /* FacultadView.swift in Sources */,
 				FB7BAB7A2CAFFA7500972421 /* UsalApp.swift in Sources */,
+				FBA917092CB93F7F0005EA5D /* InfoView.swift in Sources */,
 				FB7BABB22CAFFF4400972421 /* FacultadRow.swift in Sources */,
 				FB7BABA82CAFFAC800972421 /* MapView.swift in Sources */,
+				FBA917072CB93F670005EA5D /* HomeView.swift in Sources */,
+				FBA917052CB9366E0005EA5D /* FavoriteButton.swift in Sources */,
 				FB7BABAE2CAFFC2B00972421 /* Facultad.swift in Sources */,
-				FB7BABA72CAFFAC800972421 /* ContentView.swift in Sources */,
 				FB7BABB42CB000C400972421 /* FacultadList.swift in Sources */,
 				FB7BABA62CAFFAC800972421 /* CircleImage.swift in Sources */,
+				FBA9170D2CB941DA0005EA5D /* ContentView.swift in Sources */,
 				FB7BABB02CAFFEB400972421 /* ModelData.swift in Sources */,
 				FB7BABB62CB0020100972421 /* FacultadDetail.swift in Sources */,
 			);

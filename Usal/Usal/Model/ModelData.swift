@@ -10,6 +10,21 @@ Created by Luis Augusto Silva on 4/10/24.
 
 import Foundation
 
+@MainActor //para ejecutar la actualizacion en el hilo principal
+
+class ModelData : ObservableObject{
+    @Published var facultades:[Facultad]=[]
+    
+    init(){
+        loadFacultades()
+    }
+   
+    private func loadFacultades(){
+        facultades=load("facultades.json")
+    }
+    
+}
+
 var facultades: [Facultad] = load("facultades.json")
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -5,7 +5,7 @@
         "city": "Salamanca",
         "id": 2001,
         "isFeatured": true,
-        "isFavorite": true,
+        "isFavorite": false,
         "departments": [
             {
                 "name": "Departamento de Lengua Española",
@@ -70,5 +70,28 @@
         },
         "description": "La Facultad de Ciencias ofrece grados en biología, física, química, y ciencias ambientales, con una fuerte orientación hacia la investigación.",
         "imageName": "facultad_ciencias"
-    }
-]
+    },
+    {
+        "name": "Facultad de Magisterio",
+        "category": "Ciencias",
+        "city": "Salamanca",
+        "id": 2004,
+        "isFeatured": false,
+        "isFavorite": true,
+        "departments": [
+            {
+                "name": "Departamento de Pedagogia",
+                "courses": ["Enseñanza", "Matrematicas", "Lengua"]
+            },
+            {
+                "name": "Departamento de Sociologia",
+                "courses": ["Geografia", "", "Astrofísica"]
+            }
+        ],
+        "coordinates": {
+            "longitude": -5.66543,
+            "latitude": 40.96178
+        },
+        "description": "La Facultad de Ciencias ofrece grados en biología, física, química, y ciencias ambientales, con una fuerte orientación hacia la investigación.",
+        "imageName": "facultad_magisterio"
+    }]
