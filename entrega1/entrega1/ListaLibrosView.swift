@@ -1,18 +1,11 @@
-//
-//  ListaLibrosView.swift
-//  entrega1
-//
-//  Created by alumno on 30/10/24.
-//
-
 import SwiftUI
 import SwiftData
 
 struct ListaLibrosView: View {
     @Query private var libros: [Libro]
     @State private var filtroEstado: EstadoLectura? = nil
-    @Environment(\.modelContext) private var context // Asegúrate de tener acceso al contexto
-    @State private var mostrarAlerta: Bool = false // Estado para mostrar la alerta de confirmación
+    @Environment(\.modelContext) private var context
+    @State private var mostrarAlerta: Bool = false
     
     private var ritmoLectura: Double {
         UserDefaults.standard.double(forKey: "RitmoLectura")
@@ -31,9 +24,22 @@ struct ListaLibrosView: View {
         }
     }
 
+    private var precioTotal: Double {
+        libros.reduce(0) { total, libro in
+            total + libro.precio
+        }
+    }
+
     var body: some View {
         NavigationView {
             VStack {
+                // Mostrar número total de libros
+                Text("Total de libros: \(libros.count)")
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                    .padding(.top)
+
+                // Filtro por estado de lectura
                 Picker("Filtrar por Estado", selection: $filtroEstado) {
                     Text("Todos").tag(nil as EstadoLectura?)
                     ForEach(EstadoLectura.allCases, id: \.self) { estado in
@@ -41,20 +47,36 @@ struct ListaLibrosView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                .padding() // Añadir padding para un mejor espaciado
+                .padding(.horizontal)
+                .background(Color(.systemGray6))
+                .cornerRadius(8)
+                .padding(.top)
 
+                // Lista de libros
                 List {
                     ForEach(librosFiltrados) { libro in
                         NavigationLink(destination: DetalleLibroView(libro: libro)) {
-                            VStack(alignment: .leading) {
-                                Text(libro.titulo)
-                                    .font(.headline) // Título en negrita
-                                Text("Autor: \(libro.autor.nombre) \(libro.autor.apellidos)")
-                                Text("Estado: \(libro.estadoLectura.rawValue)")
-                                    .foregroundColor(.gray) // Color gris para el estado
+                            HStack {
+                                Image(systemName: "book.circle.fill")
+                                    .resizable()
+                                    .frame(width: 40, height: 40)
+                                    .foregroundColor(.blue)
+                                    .padding(.trailing, 8)
+                                
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(libro.titulo)
+                                        .font(.headline)
+                                        .foregroundColor(.primary)
+                                    Text("Autor: \(libro.autor.nombre) \(libro.autor.apellidos)")
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                    Text("Estado: \(libro.estadoLectura.rawValue)")
+                                        .font(.caption)
+                                        .foregroundColor(.gray)
+                                }
                             }
                         }
-                        .swipeActions { // Agrega acciones de deslizamiento
+                        .swipeActions {
                             Button(role: .destructive) {
                                 eliminarLibro(libro)
                             } label: {
@@ -63,43 +85,57 @@ struct ListaLibrosView: View {
                         }
                     }
                 }
-
+                
+                // Tiempo total de lectura
                 Text("Tiempo Total de Lectura: \(tiempoTotalLectura, specifier: "%.2f") minutos")
-                    .padding() // Añadir padding para mejor espaciado
+                    .padding()
                     .font(.subheadline)
-                    .foregroundColor(.blue) // Color azul para el texto
+                    .foregroundColor(.blue)
+
+                // Precio total de todos los libros
+                Text("Precio Total de Libros: \(precioTotal, specifier: "%.2f") €")
+                    .padding()
+                    .font(.subheadline)
+                    .foregroundColor(.green)
 
                 // Botón para vaciar el almacén
                 Button(action: {
                     mostrarAlerta = true
                 }) {
-                    Text("Vaciar Almacén")
-                        .foregroundColor(.red)
-                        .fontWeight(.bold)
+                    HStack {
+                        Image(systemName: "trash")
+                        Text("Vaciar Almacén")
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                    .cornerRadius(8)
                 }
-                .padding()
+                .padding(.bottom)
             }
             .navigationTitle("Lista de Libros")
-            .alert(isPresented: $mostrarAlerta) { // Alertas para confirmar la acción
-                Alert(title: Text("Confirmar Vaciar Almacén"),
-                      message: Text("¿Estás seguro de que deseas vaciar el almacén de libros? Esta acción no se puede deshacer."),
-                      primaryButton: .destructive(Text("Eliminar")) {
-                          vaciarAlmacen() // Vaciar el almacén
-                      },
-                      secondaryButton: .cancel())
+            .alert(isPresented: $mostrarAlerta) {
+                Alert(
+                    title: Text("Confirmar Vaciar Almacén"),
+                    message: Text("¿Estás seguro de que deseas vaciar el almacén de libros? Esta acción no se puede deshacer."),
+                    primaryButton: .destructive(Text("Eliminar")) {
+                        vaciarAlmacen()
+                    },
+                    secondaryButton: .cancel()
+                )
             }
         }
     }
 
     // Método para eliminar un libro
     private func eliminarLibro(_ libro: Libro) {
-        context.delete(libro) // Elimina el libro del contexto
+        context.delete(libro)
     }
     
     // Método para vaciar el almacén
     private func vaciarAlmacen() {
         for libro in libros {
-            context.delete(libro) // Elimina cada libro del contexto
+            context.delete(libro)
         }
     }
 }

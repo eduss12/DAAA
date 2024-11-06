@@ -113,9 +113,9 @@
 				FB19B3852CD22BAF00ABF632 /* ConfiguracionView.swift */,
 				FB19B3892CD22CC300ABF632 /* Libro.swift */,
 				FB19B3872CD22C6A00ABF632 /* Autor.swift */,
+				FB19B38B2CD238F100ABF632 /* DetalleLibroView.swift */,
 				FB19B35B2CD2293100ABF632 /* Assets.xcassets */,
 				FB19B35D2CD2293100ABF632 /* Preview Content */,
-				FB19B38B2CD238F100ABF632 /* DetalleLibroView.swift */,
 			);
 			path = entrega1;
 			sourceTree = "<group>";

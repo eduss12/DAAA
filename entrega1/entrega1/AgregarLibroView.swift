@@ -11,56 +11,77 @@ struct AgregarLibroView: View {
     @State private var apellidosAutor = ""
     @State private var estadoLectura = EstadoLectura.noIniciado
     @State private var progresoLectura = 0.0
+    @State private var mostrandoAlerta = false
 
     var body: some View {
         NavigationView {
             Form {
-                // Información básica del libro
-                TextField("Título", text: $titulo)
-                TextField("Año de Publicación", text: $anioPublicacion)
-                    .keyboardType(.numberPad)
-                TextField("Número de Páginas", text: $numeroPaginas)
-                    .keyboardType(.numberPad)
-                TextField("Precio", text: $precio)
-                    .keyboardType(.decimalPad)
-                
-                // Información del autor
-                TextField("Nombre del Autor", text: $nombreAutor)
-                TextField("Apellidos del Autor", text: $apellidosAutor)
-                
-                // Estado de lectura - Botones en lugar de Picker
-                Text("Estado de Lectura")
-                HStack {
-                    Button("No Iniciado") {
-                        estadoLectura = .noIniciado
-                        progresoLectura = 0.0
-                    }
-                    .buttonStyle(.bordered)
-                    .foregroundColor(estadoLectura == .noIniciado ? .blue : .primary)
+                // Sección de información básica del libro
+                Section(header: Text("Información del Libro").font(.headline)) {
+                    TextField("Título", text: $titulo)
+                        .textFieldStyle(VisualTextFieldStyle(iconName: "book.fill"))
                     
-                    Button("En Progreso") {
-                        estadoLectura = .enProgreso
-                    }
-                    .buttonStyle(.bordered)
-                    .foregroundColor(estadoLectura == .enProgreso ? .blue : .primary)
-                    
-                    Button("Completado") {
-                        estadoLectura = .completado
-                        progresoLectura = 100.0
-                    }
-                    .buttonStyle(.bordered)
-                    .foregroundColor(estadoLectura == .completado ? .blue : .primary)
+                    TextField("Año de Publicación", text: $anioPublicacion)
+                        .keyboardType(.numberPad)
+                        .textFieldStyle(VisualTextFieldStyle(iconName: "calendar"))
+
+                    TextField("Número de Páginas", text: $numeroPaginas)
+                        .keyboardType(.numberPad)
+                        .textFieldStyle(VisualTextFieldStyle(iconName: "number"))
+
+                    TextField("Precio", text: $precio)
+                        .keyboardType(.decimalPad)
+                        .textFieldStyle(VisualTextFieldStyle(iconName: "tag.fill"))
                 }
                 
-                // Slider de progreso (solo si está en progreso)
-                if estadoLectura == .enProgreso {
-                    Slider(value: $progresoLectura, in: 0...100, step: 1)
-                    Text("Progreso: \(Int(progresoLectura))%")
+                // Sección de información del autor
+                Section(header: Text("Información del Autor").font(.headline)) {
+                    TextField("Nombre del Autor", text: $nombreAutor)
+                        .textFieldStyle(VisualTextFieldStyle(iconName: "person.fill"))
+                    
+                    TextField("Apellidos del Autor", text: $apellidosAutor)
+                        .textFieldStyle(VisualTextFieldStyle(iconName: "person.2.fill"))
+                }
+                
+                // Sección de estado de lectura
+                Section(header: Text("Estado de Lectura").font(.headline)) {
+                    Picker("Estado", selection: $estadoLectura) {
+                        Text("No Iniciado").tag(EstadoLectura.noIniciado)
+                        Text("En Progreso").tag(EstadoLectura.enProgreso)
+                        Text("Completado").tag(EstadoLectura.completado)
+                    }
+                    .pickerStyle(.segmented)
+                    
+                    // Slider de progreso, solo visible si el estado es "En Progreso"
+                    if estadoLectura == .enProgreso {
+                        VStack {
+                            Slider(value: $progresoLectura, in: 0...100, step: 1)
+                            Text("Progreso: \(Int(progresoLectura))%")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(.top, 8)
+                    }
                 }
                 
                 // Botón para guardar el libro
-                Button("Guardar Libro") {
-                    guardarLibro()
+                Section {
+                    Button(action: guardarLibro) {
+                        HStack {
+                            Spacer()
+                            Text("Guardar Libro")
+                                .bold()
+                                .foregroundColor(.white)
+                            Spacer()
+                        }
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                    }
+                    .listRowBackground(Color.clear)
+                    .alert(isPresented: $mostrandoAlerta) {
+                        Alert(title: Text("Libro Guardado"), message: Text("El libro se ha guardado exitosamente."), dismissButton: .default(Text("OK")))
+                    }
                 }
             }
             .navigationTitle("Agregar Libro")
@@ -69,10 +90,7 @@ struct AgregarLibroView: View {
     
     // Función para crear y guardar el libro
     private func guardarLibro() {
-        // Creación del autor
         let autor = Autor(nombre: nombreAutor, apellidos: apellidosAutor)
-        
-        // Creación del libro con los datos ingresados
         let libro = Libro(
             titulo: titulo,
             anioPublicacion: Int(anioPublicacion) ?? 0,
@@ -83,10 +101,13 @@ struct AgregarLibroView: View {
             progresoLectura: estadoLectura == .completado ? 100 : progresoLectura
         )
         
-        // Inserción del libro en el contexto de datos
         context.insert(libro)
-        
-        // Limpieza de campos después de guardar
+        limpiarCampos()
+        mostrandoAlerta = true
+    }
+    
+    // Función para limpiar campos después de guardar
+    private func limpiarCampos() {
         titulo = ""
         anioPublicacion = ""
         numeroPaginas = ""
@@ -95,6 +116,22 @@ struct AgregarLibroView: View {
         apellidosAutor = ""
         estadoLectura = .noIniciado
         progresoLectura = 0.0
+    }
+}
+
+// Estilo de campo de texto personalizado con icono
+struct VisualTextFieldStyle: TextFieldStyle {
+    var iconName: String
+    
+    func _body(configuration: TextField<Self._Label>) -> some View {
+        HStack {
+            Image(systemName: iconName)
+                .foregroundColor(.blue)
+            configuration
+                .padding(10)
+                .background(Color(.systemGray6))
+                .cornerRadius(8)
+        }
     }
 }
 
