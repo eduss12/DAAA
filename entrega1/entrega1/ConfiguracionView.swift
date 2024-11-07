@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 struct ConfiguracionView: View {
-    @State private var ritmoLectura = UserDefaults.standard.double(forKey: "RitmoLectura")
+    //@State private var ritmoLectura = UserDefaults.standard.double(forKey: "RitmoLectura")
     
     // Datos del usuario
     @State private var nombreUsuario = UserDefaults.standard.string(forKey: "NombreUsuario") ?? "Usuario"
@@ -14,6 +14,7 @@ struct ConfiguracionView: View {
     // Configuración de tema
     @Environment(\.colorScheme) var colorScheme
     @State private var temaOscuro = UserDefaults.standard.bool(forKey: "TemaOscuro")
+    @AppStorage("ritmoLectura") var ritmoLectura: Double = 1.0
     
     var body: some View {
         NavigationView {
@@ -41,9 +42,7 @@ struct ConfiguracionView: View {
                             .foregroundColor(.blue)
                         
                         Stepper(" \(Int(ritmoLectura)) páginas/min", value: $ritmoLectura, in: 1...100)
-                            .onChange(of: ritmoLectura) { newValue in
-                                UserDefaults.standard.set(newValue, forKey: "RitmoLectura")
-                            }
+                       
                     }
                     .padding()
                     .background(Color(.systemGray6))
@@ -61,8 +60,8 @@ struct ConfiguracionView: View {
                         .padding()
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
-                        .onChange(of: nombreUsuario) { newValue in
-                            UserDefaults.standard.set(newValue, forKey: "NombreUsuario")
+                        .onChange(of: nombreUsuario) {
+                            UserDefaults.standard.set(nombreUsuario, forKey: "NombreUsuario")
                         }
 
                     TextField("Correo Electrónico", text: $correoUsuario)
@@ -70,8 +69,8 @@ struct ConfiguracionView: View {
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .keyboardType(.emailAddress)
-                        .onChange(of: correoUsuario) { newValue in
-                            UserDefaults.standard.set(newValue, forKey: "CorreoUsuario")
+                        .onChange(of: correoUsuario) {
+                            UserDefaults.standard.set(correoUsuario, forKey: "CorreoUsuario")
                         }
                 }
                 .padding()
@@ -83,8 +82,8 @@ struct ConfiguracionView: View {
                         .foregroundColor(.secondary)
                     
                     Toggle("Activar Notificaciones", isOn: $notificacionesActivadas)
-                        .onChange(of: notificacionesActivadas) { newValue in
-                            UserDefaults.standard.set(newValue, forKey: "NotificacionesActivadas")
+                        .onChange(of: notificacionesActivadas) {
+                            UserDefaults.standard.set(notificacionesActivadas, forKey: "NotificacionesActivadas")
                         }
                 }
                 .padding()
@@ -96,10 +95,10 @@ struct ConfiguracionView: View {
                         .foregroundColor(.secondary)
                     
                     Toggle("Modo Oscuro", isOn: $temaOscuro)
-                        .onChange(of: temaOscuro) { newValue in
-                            UserDefaults.standard.set(newValue, forKey: "TemaOscuro")
-                            // Para aplicar el tema oscuro, puedes configurar un valor global
-                            UIApplication.shared.windows.first?.rootViewController?.overrideUserInterfaceStyle = newValue ? .dark : .light
+                        .onChange(of: temaOscuro) {
+                            UserDefaults.standard.set(temaOscuro, forKey: "TemaOscuro")
+        
+                            UIApplication.shared.windows.first?.rootViewController?.overrideUserInterfaceStyle = temaOscuro ? .dark : .light
                         }
                 }
                 .padding()

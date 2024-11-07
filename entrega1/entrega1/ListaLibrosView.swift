@@ -7,9 +7,11 @@ struct ListaLibrosView: View {
     @Environment(\.modelContext) private var context
     @State private var mostrarAlerta: Bool = false
     
-    private var ritmoLectura: Double {
+    @AppStorage("ritmoLectura") var ritmoLectura: Double = 1.0
+    
+    /*private var ritmoLectura: Double {
         UserDefaults.standard.double(forKey: "RitmoLectura")
-    }
+    }*/
     
     private var librosFiltrados: [Libro] {
         if let filtro = filtroEstado {
