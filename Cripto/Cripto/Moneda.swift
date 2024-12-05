@@ -18,13 +18,16 @@ class Moneda:ObservableObject{
     var lastUpdated: Date
     var cambio24h: Double?
     var volumen: Double?
+    var imagen: String
+    var isFavourite: Bool = false
 
-    init(id: String, name: String, symbol: String, priceUSD: Double, priceEUR: Double, lastUpdated: Date) {
+    init(id: String, name: String, symbol: String, priceUSD: Double, priceEUR: Double, lastUpdated: Date,imagen: String) {
         self.id = id
         self.name = name
         self.symbol = symbol
         self.priceUSD = priceUSD
         self.priceEUR = priceEUR
         self.lastUpdated = lastUpdated
+        self.imagen = imagen
     }
 }

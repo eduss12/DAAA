@@ -19,6 +19,10 @@
 		FB0DDE4F2CFDA51800EED343 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DDE4E2CFDA51800EED343 /* CryptoService.swift */; };
 		FB0DDE512CFDA77100EED343 /* AgregarMonedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DDE502CFDA77100EED343 /* AgregarMonedaView.swift */; };
 		FB0DDE532CFDAB4900EED343 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0DDE522CFDAB4900EED343 /* CryptoViewModel.swift */; };
+		FB3B2B9C2D01A00600B9B57B /* MonedaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2B9B2D01A00600B9B57B /* MonedaRow.swift */; };
+		FB3B2B9E2D01A20500B9B57B /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2B9D2D01A20500B9B57B /* Alerta.swift */; };
+		FB3B2BA02D01A25600B9B57B /* AgregarAlertaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2B9F2D01A25600B9B57B /* AgregarAlertaView.swift */; };
+		FB3B2BA22D01A29E00B9B57B /* ListaAlertasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2BA12D01A29E00B9B57B /* ListaAlertasView.swift */; };
 		FBE22A412D004CAA00729F9A /* DetallesMonedaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE22A402D004CAA00729F9A /* DetallesMonedaView.swift */; };
 		FBE22A432D00636B00729F9A /* ModificarMetricasMoneda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE22A422D00636B00729F9A /* ModificarMetricasMoneda.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +60,10 @@
 		FB0DDE4E2CFDA51800EED343 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		FB0DDE502CFDA77100EED343 /* AgregarMonedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarMonedaView.swift; sourceTree = "<group>"; };
 		FB0DDE522CFDAB4900EED343 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		FB3B2B9B2D01A00600B9B57B /* MonedaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonedaRow.swift; sourceTree = "<group>"; };
+		FB3B2B9D2D01A20500B9B57B /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
+		FB3B2B9F2D01A25600B9B57B /* AgregarAlertaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarAlertaView.swift; sourceTree = "<group>"; };
+		FB3B2BA12D01A29E00B9B57B /* ListaAlertasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaAlertasView.swift; sourceTree = "<group>"; };
 		FBE22A402D004CAA00729F9A /* DetallesMonedaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesMonedaView.swift; sourceTree = "<group>"; };
 		FBE22A422D00636B00729F9A /* ModificarMetricasMoneda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificarMetricasMoneda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +127,10 @@
 				FB0DDE262CFDA2A900EED343 /* Preview Content */,
 				FBE22A402D004CAA00729F9A /* DetallesMonedaView.swift */,
 				FBE22A422D00636B00729F9A /* ModificarMetricasMoneda.swift */,
+				FB3B2B9B2D01A00600B9B57B /* MonedaRow.swift */,
+				FB3B2B9D2D01A20500B9B57B /* Alerta.swift */,
+				FB3B2B9F2D01A25600B9B57B /* AgregarAlertaView.swift */,
+				FB3B2BA12D01A29E00B9B57B /* ListaAlertasView.swift */,
 			);
 			path = Cripto;
 			sourceTree = "<group>";
@@ -278,13 +290,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3B2BA22D01A29E00B9B57B /* ListaAlertasView.swift in Sources */,
 				FBE22A412D004CAA00729F9A /* DetallesMonedaView.swift in Sources */,
 				FB0DDE212CFDA2A800EED343 /* ContentView.swift in Sources */,
 				FB0DDE4D2CFDA4C900EED343 /* ModenaDetailView.swift in Sources */,
+				FB3B2BA02D01A25600B9B57B /* AgregarAlertaView.swift in Sources */,
 				FB0DDE512CFDA77100EED343 /* AgregarMonedaView.swift in Sources */,
+				FB3B2B9C2D01A00600B9B57B /* MonedaRow.swift in Sources */,
 				FBE22A432D00636B00729F9A /* ModificarMetricasMoneda.swift in Sources */,
 				FB0DDE532CFDAB4900EED343 /* CryptoViewModel.swift in Sources */,
 				FB0DDE232CFDA2A800EED343 /* Moneda.swift in Sources */,
+				FB3B2B9E2D01A20500B9B57B /* Alerta.swift in Sources */,
 				FB0DDE1F2CFDA2A800EED343 /* CriptoApp.swift in Sources */,
 				FB0DDE4F2CFDA51800EED343 /* CryptoService.swift in Sources */,
 			);

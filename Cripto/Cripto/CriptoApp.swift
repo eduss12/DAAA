@@ -13,6 +13,7 @@ struct CriptoApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Moneda.self,
+            Alerta.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
