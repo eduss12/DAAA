@@ -43,5 +43,13 @@ class CryptoViewModel: ObservableObject {
             }
         }
     }
+    func refreshCryptocurrencies(context: ModelContext) {
+            // Actualizar la lista de monedas
+            do {
+                cryptocurrencies = try context.fetch(FetchDescriptor<Moneda>())
+            } catch {
+                errorMessage = "Error al actualizar las criptomonedas."
+            }
+        }
 }
 

@@ -44,7 +44,7 @@ struct ContentView: View {
                             .padding(.horizontal)
                     }
                     .sheet(isPresented: $mostrarAddAlertas) {
-                        ListaAlertasView() // Aquí se presenta la vista de alertas
+                        ListaAlertasView()
                     }
                 }
             }
@@ -56,46 +56,49 @@ struct ContentView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: {
-                        mostrarAddCrypto = true // mostrar el sheet
+                        mostrarAddCrypto = true
                     }) {
                         Label("Agregar Moneda", systemImage: "plus")
                     }
                 }
             }
             .sheet(isPresented: $mostrarAddCrypto) {
-                AgregarMonedaView() // añadir moneda view
+                AgregarMonedaView()
             }
             .onAppear {
                 viewModel.fetchAllCryptocurrencies(context: context)
             }
+            .onChange(of: context) { 
+                viewModel.refreshCryptocurrencies(context: context)
+            }
         }
     }
 
-    /// Lista de todas las criptomonedas
     private var todasList: some View {
         ForEach(viewModel.cryptocurrencies) { crypto in
-            MonedaRow(crypto: crypto, context: _context)
+            NavigationLink(destination: DetallesMonedaView(moneda: crypto)) {
+                MonedaRow(crypto: crypto, context: _context)
+            }
         }
         .onDelete(perform: deleteCryptocurrency)
     }
 
-    /// Lista de criptomonedas favoritas
     private var favoritosList: some View {
         ForEach(viewModel.cryptocurrencies.filter { $0.isFavourite }) { crypto in
-            MonedaRow(crypto: crypto, context: _context)
+            NavigationLink(destination: DetallesMonedaView(moneda: crypto)) {
+                MonedaRow(crypto: crypto, context: _context)
+            }
         }
         .onDelete(perform: deleteCryptocurrency)
     }
 
-    /// Función para eliminar una moneda
     private func deleteCryptocurrency(at offsets: IndexSet) {
         for index in offsets {
             let crypto = viewModel.cryptocurrencies[index]
-            context.delete(crypto) // Eliminar del contexto
-            viewModel.cryptocurrencies.remove(at: index) // Eliminar del array
+            context.delete(crypto)
+            viewModel.cryptocurrencies.remove(at: index)
         }
 
-        // Guardar los cambios en el contexto
         do {
             try context.save()
         } catch {
@@ -106,6 +109,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: [Moneda.self,Alerta.self], inMemory: true)
+        .modelContainer(for: [Moneda.self, Alerta.self], inMemory: true)
 }
 
